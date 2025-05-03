@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color</title>
+
+    <!-- lien css -->
+    <link rel="stylesheet" href="style/style.css">
+
+      <!-- Font awesome CSS -->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+</head>
+<body>
+
+    <header>
+
+        <!-- dic de la baniere qui change de couleur chaque une seconde -->
+        <div class="baniere">
+            <h1>Color generator</h1>
+            <h2>UNIVERSAL COLOR</h2>
+            <button>Refresh</button>
+        </div>
+
+    </header>
+
+    <main>
+    
+        <!-- div du contenu des couleurs RGB -->
+        <div class="container">
+            <h1>Color Changer</h1>
+            <h2>COLOR RGB</h2>
+            <div id="color-box"></div>
+            <button id="change-color-btn">change color</button>
+        </div>
+
+        <!-- div du contenu des couleurs hexadecimales -->
+        <div class="hex">
+            <h2>COLOR HEXADECIMAL</h2>
+            <ul class="generator"></ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="droit-auteur">
+            &copy; UNIVERSAL COLOR. &copf; ALL RIGHT RESERVED. &copysr; BY CHICO <span class="emojie">❤</span>
+        </div>
+    </footer>
+
+    <script src="script/app.js"></script>
+</body>
+</html>

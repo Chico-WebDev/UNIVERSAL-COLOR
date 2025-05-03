@@ -1,0 +1,24 @@
+# Système
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# node_modules (si un jour tu utilises npm, même pour Bootstrap compilé)
+node_modules/
+
+# Build/dist si tu compiles des assets plus tard
+dist/
+build/
+
+# Env
+.env
+.env.local
+
+# Cache du navigateur ou temporaire
+*.cache
+*.tmp

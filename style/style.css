@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --light: #e6e6e6;
+    --dark: rgb(2, 9, 24);
+}
+
+body, header, main, footer {
+    background: var(--light);
+    justify-items: center;
+    margin: auto;
+}
+
+.baniere {
+    width: 100%;
+    height: 40vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:   var(--dark);
+}
+
+.baniere h1, h2 {
+    color: var(--light);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.baniere button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    font-weight: 900;
+    color: var(--dark);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background 0.2s ease;
+    cursor: pointer;
+}
+
+.baniere button:hover {
+    background: goldenrod ;
+    color: var(--light)
+}
+
+i {
+    font-size: 14px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 70vh;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+    margin-top: 2%;
+}
+
+.container h2 {
+    color:   var(--dark);
+}
+
+
+#color-box {
+    background-color: aliceblue;
+    width: 50%;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(137, 43, 226, 0.664);
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+
+.colorText {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.colorText:hover {
+    background-color: #ffff;
+    color: #333;
+    transition: 0.6s;
+}
+
+.copier {
+    position: relative;
+    border: 1px solid #ffff;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: #333;
+}
+
+.copier:hover {
+    background-color: #333;
+    color: #ffff;
+    transition: 0.6s;
+}
+
+/* .copier .fa-check {
+    position: absolute;
+    display: none;
+} */
+
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(30, 143, 255, 0.511), rgba(137, 43, 226, 0.664));
+    color: #ffff;
+}
+
+button:hover {
+    background: linear-gradient(to right, rgba(137, 43, 226, 0.664), rgba(30, 143, 255, 0.511));
+}
+
+
+/* div des color hexadecimales */
+.hex {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.hex h2 {
+    color:   var(--dark);
+}
+
+/* div de chaque couleur */
+.generator {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* div qui contient chaque couleur unique */
+.generator .box-choice {
+    list-style: none;
+    margin: 13px;
+    padding: 7px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* transition: transform .2s ease; */
+}
+
+/* .generator .box-choice:active{
+    transform: scale(.8)
+} */
+
+/* class ajouter a la boite en js */
+.box-choice .color {
+    width: 135px;
+    height: 135px;
+    background: var(--light);
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.1),
+                            inset 0 0 10px 10px rgba(0,0,0,.1);
+    border: 1px solid var(--dark);
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.generator .box-choice:hover .color {
+filter: brightness(106%)
+}
+
+/* class qui affiche la valeur de la couleur en hexadecimale */
+.box-choice .value {
+margin: 1rem 0;
+font-weight: 500;
+font-size: 18px;
+text-transform: uppercase;
+display: flex;
+gap: 5px;
+align-items: center;
+}
+
+.droit-auteur {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 10px 0;
+}
