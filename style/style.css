@@ -78,7 +78,7 @@ i {
 
 #color-box {
     background-color: aliceblue;
-    width: 50%;
+    width: 70%;
     height: 250px;
     border: none;
     border-radius: 10px;
@@ -210,4 +210,20 @@ align-items: center;
     justify-items: center;
     text-align: center;
     padding: 10px 0;
+}
+
+@media (max-width: 500px) {
+    .colorText {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    .container {
+        gap: 15px;
+        height: 50vh;
+    }
+
+    .hex {
+        margin-top: 10%;
+    }
 }
